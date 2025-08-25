@@ -1,0 +1,147 @@
+UML to Quantum Code Generation Report (Using Exact Research Methodology)
+===========================================================================
+Generated on: 2025-06-20 00:08:16.209959
+Framework: qiskit
+Input UML file: AIRUBS-PDE.uml
+Status: SUCCESS
+Output file: AIRUBS-PDE_qiskit.py
+Qubits: 4
+Gates: 18
+Tokens used: 16506
+Model: gpt-4o
+DETAILED ELEMENT ANALYSIS (Your Original Methodology):
+=======================================================
+UML CLASS DIAGRAM ELEMENTS:
+------------------------------
+  uml:Package: 8
+  uml:Class: 10
+  uml:Operation: 21
+  uml:Properties: 18
+
+UML ACTIVITY DIAGRAM ELEMENTS:
+-----------------------------------
+  ActivityPartition: 4
+  umlQgates: 27
+  DataStore: 0
+
+GENERATED PYTHON PROJECT METRICS:
+--------------------------------------
+  Folders: 0
+  Files: -1
+  Functions: 1
+  Variables: 0
+
+GENERATED QISKIT METRICS:
+----------------------------
+  Qubits: 0
+  QGates: 19
+  ClassicalRegs: 0
+  LOC: 27
+
+PRECISION, RECALL, F-MEASURE EVALUATION (Using Your Exact Formulas):
+======================================================================
+OVERALL METRICS:
+- Precision = Relevant / (Relevant + Irrelevant) = 1.0000
+- Recall = Relevant / (Relevant + Missing) = 0.2159
+- F-Measure = 2 / (1/Precision + 1/Recall) = 0.3551
+- Expected Elements: 88
+- Generated Elements: 19
+- Relevant Elements: 19
+- Irrelevant Elements: 0
+- Missing Elements: 69
+
+DETAILED METRICS BY ELEMENT TYPE:
+-----------------------------------
+
+CLASSES:
+  Precision: 0.0000
+  Recall: -0.1000
+  F-Measure: 0.0000
+  Expected: 10
+  Generated: -1
+  Relevant: -1
+  Irrelevant: 0
+  Missing: 11
+
+OPERATIONS:
+  Precision: 1.0000
+  Recall: 0.0476
+  F-Measure: 0.0909
+  Expected: 21
+  Generated: 1
+  Relevant: 1
+  Irrelevant: 0
+  Missing: 20
+
+PROPERTIES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 18
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 18
+
+QUANTUM_GATES:
+  Precision: 1.0000
+  Recall: 0.7037
+  F-Measure: 0.8261
+  Expected: 27
+  Generated: 19
+  Relevant: 19
+  Irrelevant: 0
+  Missing: 8
+
+QUANTUM_PARTITIONS:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 4
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 4
+
+PACKAGES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 8
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 8
+
+Circuit Summary:
+--------------------
+The circuit begins with Hadamard gates applied to all four qubits, creating superposition. Phase gates are then applied to each qubit with a specified angle. The circuit includes a series of CNOT gates that entangle the qubits in a specific pattern, as defined by the UML model.
+
+Explanation:
+---------------
+The generated Python code defines a function `circuit1()` that constructs a quantum circuit using Qiskit. The circuit is composed of 4 qubits and includes a series of Hadamard gates, phase gates, and CNOT gates. The Hadamard gates are applied to all qubits initially, followed by phase gates with a specific angle. The CNOT gates are applied between various pairs of qubits as specified by the UML model.
+
+Dependencies:
+---------------
+- qiskit
+- math
+
+Usage Instructions:
+--------------------
+To run the code, ensure you have Qiskit installed. You can execute the `circuit1()` function to obtain a QuantumCircuit object, which can then be executed on a quantum simulator or real quantum device using Qiskit's execution functions.
+
+Qiskit Patterns Used:
+--------------------
+- QuantumCircuit construction
+- Hadamard gate application
+- Phase gate application
+- CNOT gate application
+- Use of math library for angle calculations
+
+CodeBLEU Evaluation:
+--------------------
+codebleu: 0.0920
+ngram_match_score: 0.0125
+weighted_ngram_match_score: 0.0150
+syntax_match_score: 0.1683
+dataflow_match_score: 0.1724

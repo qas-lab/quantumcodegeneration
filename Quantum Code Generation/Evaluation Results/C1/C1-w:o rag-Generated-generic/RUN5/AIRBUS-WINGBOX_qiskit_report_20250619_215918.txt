@@ -1,0 +1,145 @@
+UML to Quantum Code Generation Report (Using Exact Research Methodology)
+===========================================================================
+Generated on: 2025-06-19 21:59:18.287275
+Framework: qiskit
+Input UML file: AIRBUS-WINGBOX.uml
+Status: SUCCESS
+Output file: AIRBUS-WINGBOX_qiskit.py
+Qubits: 4
+Gates: 30
+Tokens used: 18789
+Model: gpt-4o
+DETAILED ELEMENT ANALYSIS (Your Original Methodology):
+=======================================================
+UML CLASS DIAGRAM ELEMENTS:
+------------------------------
+  uml:Package: 8
+  uml:Class: 13
+  uml:Operation: 10
+  uml:Properties: 19
+
+UML ACTIVITY DIAGRAM ELEMENTS:
+-----------------------------------
+  ActivityPartition: 4
+  umlQgates: 33
+  DataStore: 0
+
+GENERATED PYTHON PROJECT METRICS:
+--------------------------------------
+  Folders: 0
+  Files: -1
+  Functions: 1
+  Variables: 0
+
+GENERATED QISKIT METRICS:
+----------------------------
+  Qubits: 1
+  QGates: 34
+  ClassicalRegs: 0
+  LOC: 45
+
+PRECISION, RECALL, F-MEASURE EVALUATION (Using Your Exact Formulas):
+======================================================================
+OVERALL METRICS:
+- Precision = Relevant / (Relevant + Irrelevant) = 0.9714
+- Recall = Relevant / (Relevant + Missing) = 0.3908
+- F-Measure = 2 / (1/Precision + 1/Recall) = 0.5574
+- Expected Elements: 87
+- Generated Elements: 35
+- Relevant Elements: 34
+- Irrelevant Elements: 1
+- Missing Elements: 53
+
+DETAILED METRICS BY ELEMENT TYPE:
+-----------------------------------
+
+CLASSES:
+  Precision: 0.0000
+  Recall: -0.0769
+  F-Measure: 0.0000
+  Expected: 13
+  Generated: -1
+  Relevant: -1
+  Irrelevant: 0
+  Missing: 14
+
+OPERATIONS:
+  Precision: 1.0000
+  Recall: 0.1000
+  F-Measure: 0.1818
+  Expected: 10
+  Generated: 1
+  Relevant: 1
+  Irrelevant: 0
+  Missing: 9
+
+PROPERTIES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 19
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 19
+
+QUANTUM_GATES:
+  Precision: 0.9706
+  Recall: 1.0000
+  F-Measure: 0.9851
+  Expected: 33
+  Generated: 34
+  Relevant: 33
+  Irrelevant: 1
+  Missing: 0
+
+QUANTUM_PARTITIONS:
+  Precision: 1.0000
+  Recall: 0.2500
+  F-Measure: 0.4000
+  Expected: 4
+  Generated: 1
+  Relevant: 1
+  Irrelevant: 0
+  Missing: 3
+
+PACKAGES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 8
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 8
+
+Circuit Summary:
+--------------------
+The circuit consists of 4 qubits and a series of quantum gates applied in a specific sequence. The gates include Ry, H, U, P, RZ, and CNOT, with various parameters for rotation angles. The circuit involves multiple controlled operations (CNOT) and single-qubit rotations, forming a complex quantum operation.
+
+Explanation:
+---------------
+The provided code defines a quantum circuit using Qiskit based on the UML model. The circuit consists of 4 qubits and a sequence of quantum gates, including Ry, H, U, P, RZ, and CNOT gates. The gates are applied to the qubits in a specific order as described in the UML model, ensuring the circuit logic is faithfully reconstructed.
+
+Dependencies:
+---------------
+- qiskit
+
+Usage Instructions:
+--------------------
+To run the code, ensure you have Qiskit installed. You can execute the function `circuit1()` to obtain the quantum circuit object. This circuit can be further used for simulation or execution on a quantum device using Qiskit's Aer or IBM Quantum backends.
+
+Qiskit Patterns Used:
+--------------------
+- QuantumRegister for qubit management
+- QuantumCircuit for circuit construction
+- Use of parameterized gates like Ry, RZ, and U
+- Controlled operations using CNOT
+
+CodeBLEU Evaluation:
+--------------------
+codebleu: 0.1541
+ngram_match_score: 0.0081
+weighted_ngram_match_score: 0.0316
+syntax_match_score: 0.3684
+dataflow_match_score: 0.2083

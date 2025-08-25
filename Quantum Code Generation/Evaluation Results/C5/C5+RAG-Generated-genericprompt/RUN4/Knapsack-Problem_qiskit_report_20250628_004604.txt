@@ -1,0 +1,148 @@
+UML to Quantum Code Generation Report (Using Exact Research Methodology)
+===========================================================================
+Generated on: 2025-06-28 00:46:04.198517
+Framework: qiskit
+Input UML file: Knapsack-Problem.uml
+Status: SUCCESS
+Output file: Knapsack-Problem_qiskit.py
+Qubits: 4
+Gates: 16
+Tokens used: 14027
+Model: gpt-4o
+RAG contexts used: 13
+
+DETAILED ELEMENT ANALYSIS (main paper Methodology):
+=======================================================
+UML CLASS DIAGRAM ELEMENTS:
+------------------------------
+  uml:Package: 8
+  uml:Class: 9
+  uml:Operation: 11
+  uml:Properties: 12
+
+UML ACTIVITY DIAGRAM ELEMENTS:
+-----------------------------------
+  ActivityPartition: 4
+  umlQgates: 16
+  DataStore: 0
+
+GENERATED PYTHON PROJECT METRICS:
+--------------------------------------
+  Folders: 0
+  Files: -1
+  Functions: 1
+  Variables: 0
+
+GENERATED QISKIT METRICS:
+----------------------------
+  Qubits: 0
+  QGates: 19
+  ClassicalRegs: 0
+  LOC: 28
+
+PRECISION, RECALL, F-MEASURE EVALUATION (Using main paper Formulas):
+======================================================================
+OVERALL METRICS:
+- Precision = Relevant / (Relevant + Irrelevant) = 0.8421
+- Recall = Relevant / (Relevant + Missing) = 0.2667
+- F-Measure = 2 / (1/Precision + 1/Recall) = 0.4051
+- Expected Elements: 60
+- Generated Elements: 19
+- Relevant Elements: 16
+- Irrelevant Elements: 3
+- Missing Elements: 44
+
+DETAILED METRICS BY ELEMENT TYPE:
+-----------------------------------
+
+CLASSES:
+  Precision: 0.0000
+  Recall: -0.1111
+  F-Measure: 0.0000
+  Expected: 9
+  Generated: -1
+  Relevant: -1
+  Irrelevant: 0
+  Missing: 10
+
+OPERATIONS:
+  Precision: 1.0000
+  Recall: 0.0909
+  F-Measure: 0.1667
+  Expected: 11
+  Generated: 1
+  Relevant: 1
+  Irrelevant: 0
+  Missing: 10
+
+PROPERTIES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 12
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 12
+
+QUANTUM_GATES:
+  Precision: 0.8421
+  Recall: 1.0000
+  F-Measure: 0.9143
+  Expected: 16
+  Generated: 19
+  Relevant: 16
+  Irrelevant: 3
+  Missing: 0
+
+QUANTUM_PARTITIONS:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 4
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 4
+
+PACKAGES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 8
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 8
+
+Circuit Summary:
+--------------------
+The circuit begins with U gates applied to each of the 4 qubits with parameters (0, pi, 0). It then applies a series of CNOT gates between specified qubits, interleaved with Rz rotations on the target qubits. The sequence of operations is derived from the control flow and constraints specified in the UML model.
+
+Explanation:
+---------------
+The generated code defines a quantum circuit named 'QAOAcircuit' using Qiskit. The circuit consists of 4 qubits and applies a series of U gates with specific parameters to each qubit, followed by a sequence of CNOT gates and Rz rotations as specified in the UML model.
+
+Dependencies:
+---------------
+- qiskit
+- numpy
+
+Usage Instructions:
+--------------------
+To run the code, ensure you have Qiskit and NumPy installed. You can execute the function 'QAOAcircuit' to obtain a QuantumCircuit object, which can then be simulated or run on a quantum device using Qiskit's execution backends.
+
+Qiskit Patterns Used:
+--------------------
+- QuantumCircuit creation
+- U gate application
+- CNOT gate application
+- Rz gate application
+
+CodeBLEU Evaluation:
+--------------------
+codebleu: 0.1387
+ngram_match_score: 0.0131
+weighted_ngram_match_score: 0.0225
+syntax_match_score: 0.2033
+dataflow_match_score: 0.3158

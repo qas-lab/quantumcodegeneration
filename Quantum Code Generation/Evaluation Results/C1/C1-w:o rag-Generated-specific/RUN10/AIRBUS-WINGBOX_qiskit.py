@@ -1,0 +1,43 @@
+from qiskit import QuantumCircuit, QuantumRegister
+
+
+def circuit1() -> QuantumCircuit:
+    q3 = QuantumRegister(1, 'q3')
+    q1 = QuantumRegister(1, 'q1')
+    q0 = QuantumRegister(1, 'q0')
+    q2 = QuantumRegister(1, 'q2')
+    circuit1 = QuantumCircuit(q3, q1, q0, q2)
+
+    circuit1.ry(0, q0)
+    circuit1.h(q1)
+    circuit1.h(q2)
+    circuit1.p(2, q1)
+    circuit1.p(2, q2)
+    circuit1.p(3.141592653589793/2, q0)
+    circuit1.cx(q1, q0)
+    circuit1.ry(-0.677, q0)
+    circuit1.cx(q1, q0)
+    circuit1.ry(0.677, q0)
+    circuit1.p(4.71238898038469, q0)
+    circuit1.p(1.5707963267948966, q0)
+    circuit1.cx(q2, q0)
+    circuit1.ry(-1.33, q0)
+    circuit1.cx(q2, q0)
+    circuit1.ry(1.33, q0)
+    circuit1.p(4.71238898038469, q0)
+    circuit1.h(q2)
+    circuit1.rz(-0.7853981633974483, q2)
+    circuit1.cx(q1, q2)
+    circuit1.rz(0.7853981633974483, q2)
+    circuit1.cx(q1, q2)
+    circuit1.h(q1)
+    circuit1.cx(q2, q3)
+    circuit1.ry(-0.694, q3)
+    circuit1.cx(q2, q3)
+    circuit1.ry(-0.877, q3)
+    circuit1.cx(q1, q3)
+    circuit1.ry(0.354, q3)
+    circuit1.cx(q1, q3)
+    circuit1.ry(1.22, q3)
+
+    return circuit1

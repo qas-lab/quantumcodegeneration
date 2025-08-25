@@ -1,0 +1,145 @@
+UML to Quantum Code Generation Report (Using Exact Research Methodology)
+===========================================================================
+Generated on: 2025-06-29 05:36:06.150388
+Framework: qiskit
+Input UML file: PricingV2.uml
+Status: SUCCESS
+Output file: PricingV2_qiskit.py
+Qubits: 3
+Gates: 12
+Tokens used: 13756
+Model: gpt-4o
+DETAILED ELEMENT ANALYSIS (Main paper Original Methodology):
+=======================================================
+UML CLASS DIAGRAM ELEMENTS:
+------------------------------
+  uml:Package: 8
+  uml:Class: 12
+  uml:Operation: 13
+  uml:Properties: 22
+
+UML ACTIVITY DIAGRAM ELEMENTS:
+-----------------------------------
+  ActivityPartition: 3
+  umlQgates: 13
+  DataStore: 0
+
+GENERATED PYTHON PROJECT METRICS:
+--------------------------------------
+  Folders: 0
+  Files: -1
+  Functions: 1
+  Variables: 0
+
+GENERATED QISKIT METRICS:
+----------------------------
+  Qubits: 3
+  QGates: 14
+  ClassicalRegs: 0
+  LOC: 24
+
+PRECISION, RECALL, F-MEASURE EVALUATION (Using Main paper Exact Formulas):
+======================================================================
+OVERALL METRICS:
+- Precision = Relevant / (Relevant + Irrelevant) = 0.9412
+- Recall = Relevant / (Relevant + Missing) = 0.2254
+- F-Measure = 2 / (1/Precision + 1/Recall) = 0.3636
+- Expected Elements: 71
+- Generated Elements: 17
+- Relevant Elements: 16
+- Irrelevant Elements: 1
+- Missing Elements: 55
+
+DETAILED METRICS BY ELEMENT TYPE:
+-----------------------------------
+
+CLASSES:
+  Precision: 0.0000
+  Recall: -0.0833
+  F-Measure: 0.0000
+  Expected: 12
+  Generated: -1
+  Relevant: -1
+  Irrelevant: 0
+  Missing: 13
+
+OPERATIONS:
+  Precision: 1.0000
+  Recall: 0.0769
+  F-Measure: 0.1429
+  Expected: 13
+  Generated: 1
+  Relevant: 1
+  Irrelevant: 0
+  Missing: 12
+
+PROPERTIES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 22
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 22
+
+QUANTUM_GATES:
+  Precision: 0.9286
+  Recall: 1.0000
+  F-Measure: 0.9630
+  Expected: 13
+  Generated: 14
+  Relevant: 13
+  Irrelevant: 1
+  Missing: 0
+
+QUANTUM_PARTITIONS:
+  Precision: 1.0000
+  Recall: 1.0000
+  F-Measure: 1.0000
+  Expected: 3
+  Generated: 3
+  Relevant: 3
+  Irrelevant: 0
+  Missing: 0
+
+PACKAGES:
+  Precision: 0.0000
+  Recall: 0.0000
+  F-Measure: 0.0000
+  Expected: 8
+  Generated: 0
+  Relevant: 0
+  Irrelevant: 0
+  Missing: 8
+
+Circuit Summary:
+--------------------
+The circuit consists of three qubits (q0, q1, q2) and implements a sequence of Ry rotations and CNOT gates. The Ry gates are applied with specific angles to each qubit, and CNOT gates are used to entangle the qubits according to the constraints specified in the UML model. The sequence of operations is designed to simulate the quantum logic for pricing a European Call option.
+
+Explanation:
+---------------
+The generated code defines a quantum circuit for a European Call option using Qiskit. The circuit is constructed based on the UML model provided, which specifies the sequence of quantum gates and their parameters. The circuit uses three qubits and includes a series of Ry rotations and CNOT gates, following the control flow from the UML activity diagram.
+
+Dependencies:
+---------------
+- qiskit
+
+Usage Instructions:
+--------------------
+To run the code, ensure you have Qiskit installed. You can execute the function `europeanCallQuantumCircuit()` to obtain the quantum circuit object. This circuit can then be run on a quantum simulator or real quantum hardware using Qiskit's execution functions.
+
+Qiskit Patterns Used:
+--------------------
+- QuantumRegister
+- QuantumCircuit
+- ry
+- cx
+
+CodeBLEU Evaluation:
+--------------------
+codebleu: 0.5697
+ngram_match_score: 0.3862
+weighted_ngram_match_score: 0.3926
+syntax_match_score: 0.5000
+dataflow_match_score: 1.0000
